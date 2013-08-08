@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>The Nature of Code Video Series | 4.9 Using Image Textures with Particles</title>
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="http://natureofcode.com/css/fonts.css"/>
+
+	<link rel="stylesheet" href="/css/screen.css">
+
+</head>
+<body>
+
+
+	<header>
+		<h1 class="title"><a href="/">The <strong>Nature</strong> of Code Video Series</a></h1>
+	</header>
+
+	<div id="sidebar">
+
+	<ul class="posts">
+	
+		
+		<li><a href="/i.0/">Intro I.0</a></li>
+    			
+	
+		
+		<li><a href="/i.1/">Intro I.1 Random Walker</a></li>
+    			
+	
+		
+		<li><a href="/i.2/">Intro I.2 Probability Basics</a></li>
+    			
+	
+		
+		<li><a href="/i.3/">Intro I.3 Gaussian Distribution</a></li>
+    			
+	
+		
+		<li><a href="/i.4/">Intro I.4 Custom Distribution</a></li>
+    			
+	
+		
+		<li><a href="/i.5/">Intro I.5 Perlin Noise</a></li>
+    			
+	
+		
+		<li><a href="/1.1/">1.1 Vectors</a></li>
+    			
+	
+		
+		<li><a href="/1.2/">1.2 PVector class</a></li>
+    			
+	
+		
+		<li><a href="/1.3/">1.3 Vector Math</a></li>
+    			
+	
+		
+		<li><a href="/1.4/">1.4 Vector Math II</a></li>
+    			
+	
+		
+		<li><a href="/1.5/">1.5 Vectors: Acceleration</a></li>
+    			
+	
+		
+		<li><a href="/1.6/">1.6 Vectors: Acceleration towards mouse</a></li>
+    			
+	
+		
+		<li><a href="/2.1/">2.1 What is a Force?</a></li>
+    			
+	
+		
+		<li><a href="/2.2/">2.2 Applying a force</a></li>
+    			
+	
+		
+		<li><a href="/2.3/">2.3 Simulating mass</a></li>
+    			
+	
+		
+		<li><a href="/2.4/">2.4 Friction Force</a></li>
+    			
+	
+		
+		<li><a href="/2.5/">2.5 Drag Force</a></li>
+    			
+	
+		
+		<li><a href="/2.6/">2.6 Gravitational Attraction</a></li>
+    			
+	
+		
+		<li><a href="/3.1/">3.1 Angles and Angular Motion</a></li>
+    			
+	
+		
+		<li><a href="/3.2/">3.2 Trigonometry and Polar Coordinates</a></li>
+    			
+	
+		
+		<li><a href="/3.3/">3.3 Simple Harmonic Motion</a></li>
+    			
+	
+		
+		<li><a href="/3.4/">3.4 Pendulum Simulation</a></li>
+    			
+	
+		
+		<li><a href="/3.5/">3.5 Springs</a></li>
+    			
+	
+		
+		<li><a href="/4.1/">4.1 Particle Systems</a></li>
+    			
+	
+		
+		<li><a href="/4.2/">4.2 ArrayLists</a></li>
+    			
+	
+		
+		<li><a href="/4.3/">4.3 Deleting objects from ArrayList</a></li>
+    			
+	
+		
+		<li><a href="/4.4/">4.4 Particle System Class</a></li>
+    			
+	
+		
+		<li><a href="/4.5/">4.5 Introduction to Inheritance</a></li>
+    			
+	
+		
+		<li><a href="/4.6/">4.6 Introduction to Inheritance Part II </a></li>
+    			
+	
+		
+		<li><a href="/4.7/">4.7 Introduction to Polymorphism</a></li>
+    			
+	
+		
+		<li><a href="/4.8/">4.8 Applying forces to a Particle System</a></li>
+    			
+	
+		
+		<li class="active"><a href="/4.9/">4.9 Using Image Textures with Particles</a></li>
+				
+	
+		
+		<li><a href="/5.1/">5.1 What is Box2D?</a></li>
+    			
+	
+		
+		<li><a href="/5.2/">5.2 What makes up a Box2D world?</a></li>
+    			
+	
+		
+		<li><a href="/5.3/">5.3 Box2D Coordinates and Vectors</a></li>
+    			
+	
+		
+		<li><a href="/5.4/">5.4 Adding Box2D to Processing sketch: Part 1</a></li>
+    			
+	
+		
+		<li><a href="/5.5/">5.5 Adding Box2D to Processing sketch: Part 2</a></li>
+    			
+	
+		
+		<li><a href="/5.6/">5.6 Static Bodies and Chain Shapes in Box2D</a></li>
+    			
+	
+		
+		<li><a href="/5.7/">5.7 Complex Shapes in Box2D</a></li>
+    			
+	
+		
+		<li><a href="/5.10/">5.10 User controlled objects: mouse joint and kinematic type</a></li>
+    			
+	
+		
+		<li><a href="/5.11/">5.11 Applying forces in Box2D</a></li>
+    			
+	
+		
+		<li><a href="/5.12/">5.12 Collision Events in Box2D</a></li>
+    			
+	
+		
+		<li><a href="/5.8/">5.8 Box2D Joints -- Distance Joint</a></li>
+    			
+	
+		
+		<li><a href="/5.9/">5.9 Box2D Joints -- Revolute Joint</a></li>
+    			
+	
+		
+		<li><a href="/5.13/">5.13 What is Toxiclibs Verlet Physics?</a></li>
+    			
+	
+		
+		<li><a href="/5.14/">5.14 Toxiclibs Verlet Physics Basics: Particles and Springs</a></li>
+    			
+	
+		
+		<li><a href="/5.15/">5.15 Connected Systems with Toxiclibs VerletPhysics</a></li>
+    			
+	
+		
+		<li><a href="/5.16/">5.16 Attraction Behaviors in Toxiclibs VerletPhysics</a></li>
+    			
+	
+		
+		<li><a href="/6.1/">6.1 Autonomous agents and Steering</a></li>
+    			
+	
+		
+		<li><a href="/6.2/">6.2 Steering Behaviors: Seek</a></li>
+    			
+	
+		
+		<li><a href="/6.3/">6.3 Steering Behaviors: Arrive</a></li>
+    			
+	
+		
+		<li><a href="/6.4/">6.4 Steering Behaviors: Flow FIeld Following</a></li>
+    			
+	
+		
+		<li><a href="/6.5/">6.5 Vectors: The Dot Product</a></li>
+    			
+	
+		
+		<li><a href="/6.6/">6.6 Steering Behaviors: Path Following</a></li>
+    			
+	
+		
+		<li><a href="/6.7/">6.7 Group Steering Behaviors </a></li>
+    			
+	
+		
+		<li><a href="/6.8/">6.8 Combining Steering Behaviors: Flocking </a></li>
+    			
+	
+		
+		<li><a href="/7.1/">7.1 Cellular Automata</a></li>
+    			
+	
+		
+		<li><a href="/7.2/">7.2 Wolfram Elementary Cellular Automata</a></li>
+    			
+	
+		
+		<li><a href="/7.3/">7.3 The Game of Life</a></li>
+    			
+	
+		
+		<li><a href="/7.4/">7.4 Cellular Automata Exercises</a></li>
+    			
+	
+		
+		<li><a href="/8.1/">8.1 Fractals</a></li>
+    			
+	
+		
+		<li><a href="/8.2/">8.2 Fractal Recursion</a></li>
+    			
+	
+		
+		<li><a href="/8.3/">8.3 Recursion with ArrayList of Objects</a></li>
+    			
+	
+		
+		<li><a href="/8.4/">8.4 Recursion with Transformations</a></li>
+    			
+	
+		
+		<li><a href="/8.5/">8.5 L-Systems</a></li>
+    			
+	
+		
+		<li><a href="/9.1/">9.1 Evolutionary Computing</a></li>
+    			
+	
+	</ul>	
+
+	</div>	
+
+	<div id="main">
+		<div id="content">
+		<h2>4.9 Using Image Textures with Particles</h2>
+
+<div id="video" style="width: 640px; height: 360px;" ></div>
+<div id="footnotes" class="well"></div>
+
+<div id="annotations">
+	<div data-start="1" data-end="10">
+	<a href="http://natureofcode.com/book/chapter-4-particle-systems/">Follow along in the book.</a>
+</div>
+
+</div>
+
+<hr/>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'natureofcode'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+<hr/>
+
+<nav id="pages"> 
+        <div class="pagePrevious"> 
+         
+                <a href="/4.8/" title="Previous Post: 4.8 Applying forces to a Particle System">&laquo; 4.8 Applying forces to a Particle System</a> 
+         
+        </div> 
+
+        <div class="pageNext"> 
+         
+                <a href="/5.1/" title="next Post: 5.1 What is Box2D?">5.1 What is Box2D? &raquo; </a> 
+         
+        </div> 
+</div> 
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+
+<script src="http://natureofcode.com/book/processingjs/processing.js"></script>
+<script src="http://natureofcode.com/book/processingjs/lazyloading.js"></script>
+
+<script>
+	var pop;
+
+	Popcorn(function() {				
+
+		$("#annotations").find("a")
+			.attr("target","_blank")
+			.attr("onclick","linkClick()");
+
+		pop = Popcorn.vimeo(
+			'#video',
+			'http://vimeo.com/60187934'
+		);
+
+		$('#annotations').children().each(function(index,value) {
+
+			pop.footnote({
+				start: $(this).attr('data-start'),
+				end: $(this).attr('data-end'),
+				text: $(this).html(),
+				target: "footnotes",
+				//effect: 'applyclass',
+          		//applyclass: 'show'				
+			});
+
+		});
+
+		pop.play();
+
+	});
+
+	function linkClick() {
+		pop.pause();
+	}
+
+</script>
+		<div>
+	</div>    
+
+</body>
+</html>
