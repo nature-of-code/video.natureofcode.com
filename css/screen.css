@@ -2,6 +2,10 @@
 // Base Style
 */
 
+html, body {
+	height:100%;
+}
+
 html {
 	background: #f6f6f6;	
 	font-family: 'Georgia'; 	
@@ -9,7 +13,6 @@ html {
 }
 
 body, h1 {
-
 	margin: 0;
 	padding: 0;
 }
@@ -78,11 +81,12 @@ h2 {
 */
 
 #sidebar {
+
 	position: absolute;
 	top: 54px;
 	left: 0;
-	width: 260px;
-	background: #dfdfdf;
+	width: 248px;
+	padding-right: 12px;
 }
 
 #main {
@@ -90,7 +94,9 @@ h2 {
 	top: 54px;
 	left: 260px;
 	right: 0;
-	bottom: 0;
+	padding-bottom: 54px;
+
+	background:#ffffff;
 }
 
 #content {
@@ -106,6 +112,16 @@ li {
 
 li a {
 	text-decoration: none;
+}
+
+/*
+// Nav
+*/
+
+nav {
+	margin-top: 24px;
+	font-family: 'ProximaNova-Regular';
+	font-size: .8em;
 }
 
 /*
