@@ -97,6 +97,7 @@ h2 {
 	padding-bottom: 54px;
 
 	background:#ffffff;
+	min-height: 100%;
 }
 
 #content {
