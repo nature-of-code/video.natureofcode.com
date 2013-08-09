@@ -1,4 +1,4 @@
-videos.natureofcode.com
-=======================
+The Nature of Code Video Series
+===============================
 
-Site for nature of code videos
+This repo holds the files for http://video.natureofcode.com/.
