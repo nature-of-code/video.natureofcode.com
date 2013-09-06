@@ -24,4 +24,4 @@ The annotation also can include source code by linking to a file on github.  For
 </div>
 ```
 
-We are thinking about a tool to allow users to submit annotations.  For now, if you'd like to contribute you'll have to do so via a pull request.  For example if you'd like to annotate [Video 0.5: Processing Examples](http://icm.shiffman.net/0.5/), you can [edit this page](https://github.com/shiffman/icm.shiffman.net/blob/gh-pages/_posts/2013-07-22-0.5.html).  Here are [all of the pages](https://github.com/shiffman/icm.shiffman.net/tree/gh-pages/_posts).
+We are thinking about a tool to allow users to submit annotations.  For now, if you'd like to contribute you'll have to do so via a pull request.  For example if you'd like to annotate [1.2: PVector](http://video.natureofcode.com/1.2/), you can [edit this page](https://github.com/shiffman/video.natureofcode.com/blob/gh-pages/_posts/2013-02-04-1.2.html).  Here are [all of the pages](https://github.com/shiffman/video.natureofcode.com/tree/gh-pages/_posts).
