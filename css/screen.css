@@ -2,12 +2,20 @@
 // Base Style
 */
 
+* {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box
+}
+
 html, body {
 	height:100%;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
 }
 
 html {
-	background: #f6f6f6;	
+	background: #ececec;	
 	font-family: 'Georgia'; 	
 
 }
@@ -29,14 +37,19 @@ li.active {
 	font-weight: bold;
 }
 
-.pagePrevious {
-	float: left;
+hr {
+	border: none;
+	background: #ccc;
+	height: 2px;
 }
 
-.pageNext {
-	float: right;
+a {
+	color: #369;
 }
 
+a:visited {
+	color: #666;
+}
 
 /*
 // Header
@@ -46,7 +59,7 @@ header {
 	text-align: center;
 	background: #EB005A;
 	padding: 12px;
-	height: 30px;
+	height: 54px;
 }
 
 h1, h2 {
@@ -57,17 +70,22 @@ h1 strong, h2 strong{
 	font-family: 'ProximaNova-Bold'; 
 }
 
-h1 a, h2 a {
+h1 a, h2 a, h1 a:visited, h2 a:visited {
 	color: #fff;
 	text-decoration: none;
 }
 
 h1 {
-	font-size: 1.5em;
+	font-size: 1.4em;
 }
 
 h2 {
-	font-size: 1.2em;
+	font-size: 1.4em;
+}
+
+h3{
+	color: #336699;
+	font-family: 'ProximaNova-Regular';
 }
 
 .title {
@@ -96,15 +114,18 @@ h2 {
 	right: 0;
 	padding-bottom: 54px;
 
-	background:#ffffff;
+	background:#f6f6f6;
 	min-height: 100%;
 }
 
 #content {
-	width: 640px;
+	width: 800px;
 	margin: auto;
 }
 
+#todo {
+	min-height: 450px;
+}
 
 li {
 	font-family: 'ProximaNova-Regular';
@@ -120,27 +141,104 @@ li a {
 */
 
 nav {
-	margin-top: 24px;
+	padding-top:12px;
 	font-family: 'ProximaNova-Regular';
 	font-size: .8em;
+}
+
+.pagePrevious {
+	float: left;
+}
+
+.pageNext {
+	float: right;
 }
 
 /*
 // Footnote
 */
 
-#annotations {
-	display: none;
+#footnotesBox {
+	margin: 8px 0;
+	min-height: 3em;
+	z-index: 100;
 }
 
-#footnotes {
+#footnotesBox.full {
+	position:fixed;
+	height: 10%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+}
+
+#videoBox {
+	width: 800px;
+	height: 450px;
+	z-index: 99;
+}
+
+#videoBox.full {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 90%;
+}
+
+#annotationsBox {
+	display: none;
+	clear: both;
+}
+
+#commandBox {
+	text-align: right;
+}
+
+#commandBox span {
+	padding-left: 10px;
+}
+
+#annotations div {
+}
+
+#showAnnotations, #goFullscreen {
+	font-family: 'ProximaNova-Regular';
+	font-size: .8em;
+	text-align: right;
+	cursor: pointer;
+	color: #999;
+}
+
+.videoLink {
+	font-size: .8em;
+	text-decoration: none;
+	color: #999;
+	border-top: 1px solid #efefef;
+	margin-top: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	cursor: pointer;
+}
+.videoLink:first-child {
+	border-top: none;
+	margin-top: 0;
+	padding-top: 0;
+}
+.videoLink:hover{
+	text-decoration:underline;
+}
+
+.box {
+	position: relative;
 	min-height: 1.2em;
-	margin: 12px 0;
 	background: #fff;
 	padding: 12px;
 	border: 1px solid #cccccc;
 
-	box-shadow:         inset 0 0 2px #ccc;	
+	box-shadow:	inset 0 0 2px #ccc;	
 	border-radius: 2px;
 
 	/*
@@ -149,6 +247,32 @@ nav {
 	-moz-transition: opacity .25s ease-in-out;
 	-webkit-transition: opacity .25s ease-in-out;
 	*/
+}
+
+#codebox {
+	display:none;
+}
+
+#codetabs {
+	font-family: 'ProximaNova-Regular';
+	font-size: .9em;
+}
+
+#codetabs a {
+	text-decoration: none;
+	padding: 8px;
+	background: #ccc;
+	color: #333;
+}
+
+#codetabs a.current {
+	color: #fff;
+	background: #369;
+	font-weight: bold;
+}
+
+#codeview {
+	overflow: scroll;
 }
 
 /*
