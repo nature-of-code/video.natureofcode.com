@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+
+<h2>{{ page.title }}</h2>
+
+<div id="videoBox">
+	<div id="video" style="width: 100%; height: 100%;" ></div>
+</div>
+
+<div id="footnotesBox" class="box"></div>
+
+<div id="commandBox">
+	<span id="goFullscreen">Go Full Screen</span>
+	<span id="showAnnotations">View All Annotations</span>
+</div>
+
+<div id="annotationsBox">
+
+	<h3>Annotations</h3>
+
+	<div id="annotations" class="box">
+
+		{{ content }}
+	</div>
+
+</div>
+
+<div id="codebox">
+	<h3>Code</h3>
+	<div id="codetabs"></div>
+	<div id="codeview" class="box">
+		<pre id="code"></pre>
+	</div>
+</div>
+
+<div id="commentsbox">
+
+	<h3>Comments</h3>
+
+	{% include disqus.html %}
+
+</div>
+
+<hr/>
+
+<nav id="pages"> 
+		<div class="pagePrevious"> 
+		{% if page.previous.url %} 
+				<a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+		{% endif %} 
+		</div> 
+
+		<div class="pageNext"> 
+		{% if page.next.url %} 
+				<a href="{{page.next.url}}" title="next Post: {{page.next.title}}">{{page.next.title}} &raquo; </a> 
+		{% endif %} 
+		</div> 
+</div> 
+
+<link href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="https://google-code-prettify.googlecode.com/svn/loader/prettify.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://popcornjs.org/code/dist/popcorn-complete.min.js"></script>
+
+<script type="text/javascript">
+
+	var page = {
+		'vimeoURL': '{{page.vimeoURL}}'
+	};
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.fullscreen-min.js"></script>
+<script type="text/javascript" src="/js/annotations.js"></script>
