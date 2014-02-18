@@ -26,6 +26,35 @@ nocURL: http://natureofcode.com/book/chapter-3-oscillation/
 	<p><b>angle = angle + angular velocity <br>angular velocity = angular velocity + angular acceleration</b></p>
 </div>
 
+<div data-start="8:31" data-end="8:57">
+	<p>View the code below:</p>
+	<pre>
+		float a = 0.0;
+		float aVelocity = 0.0;
+		float aAcceleration = 0.0;
+
+		void setup() {
+		  size(640,360);
+	    }
+
+	    void draw() {
+	      background(255);
+
+	      aAcceleration = map(mouseX,0,width,-0.001,0.001);
+
+	      a += aVelocity;
+	      aVelocity += aAcceleration;
+
+	      rectMode(CENTER);
+	      stroke(0);
+	      fill(127);
+	      translate(width/2,height/2);
+	      rotate(a);
+	      rect(0,0,64,36);
+        }
+	</pre>
+</div>
+
 <div data-start="09:15" data-end="09:22">
 	View this example in the book: <a href="http://natureofcode.com/book/chapter-2-forces/#chapter02_example6">Example 2.6: Attraction</a>. <br> Or watch the video on <a href="http://video.natureofcode.com/2.6/">Gravitational Attraction</a>.
 </div>
@@ -34,6 +63,13 @@ nocURL: http://natureofcode.com/book/chapter-3-oscillation/
 	Jump to this example in the book: <a href="http://natureofcode.com/book/chapter-3-oscillation/#chapter03_example2">Example 3.2: Forces with (arbitrary) angular motion</a>.
 </div>
 
+<div data-start="11:33" data-end="12:10">
+	View the code on <a href="https://github.com/shiffman/The-Nature-of-Code-Examples/tree/master/chp3_oscillation/NOC_3_02_forces_angular_motion">github</a>
+</div>
+
 <div data-start="13:15" data-end="13:25">
 	Play the next video: <a href="http://video.natureofcode.com/3.2/">3.2 Trigonometry and Polar Coordinates</a>.
 </div>
+
+
+
