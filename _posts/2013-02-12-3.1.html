@@ -29,29 +29,29 @@ nocURL: http://natureofcode.com/book/chapter-3-oscillation/
 <div data-start="8:31" data-end="8:57">
 	<p>View the code below:</p>
 	<pre>
-		float a = 0.0;
-		float aVelocity = 0.0;
-		float aAcceleration = 0.0;
+	float a = 0.0;
+	float aVelocity = 0.0;
+	float aAcceleration = 0.0;
 
-		void setup() {
-		  size(640,360);
-	    }
+	void setup() {
+		size(640,360);
+	}
 
-	    void draw() {
-	      background(255);
+	void draw() {
+		background(255);
 
-	      aAcceleration = map(mouseX,0,width,-0.001,0.001);
+		aAcceleration = map(mouseX,0,width,-0.001,0.001);
 
-	      a += aVelocity;
-	      aVelocity += aAcceleration;
+		a += aVelocity;
+		aVelocity += aAcceleration;
 
-	      rectMode(CENTER);
-	      stroke(0);
-	      fill(127);
-	      translate(width/2,height/2);
-	      rotate(a);
-	      rect(0,0,64,36);
-        }
+		rectMode(CENTER);
+		stroke(0);
+		fill(127);
+		translate(width/2,height/2);
+		rotate(a);
+		rect(0,0,64,36);
+	}
 	</pre>
 </div>
 
@@ -64,7 +64,7 @@ nocURL: http://natureofcode.com/book/chapter-3-oscillation/
 </div>
 
 <div data-start="11:33" data-end="12:10">
-	View the code on <a href="https://github.com/shiffman/The-Nature-of-Code-Examples/tree/master/chp3_oscillation/NOC_3_02_forces_angular_motion">github</a>
+	<a href="https://api.github.com/repos/shiffman/The-Nature-of-Code-Examples/contents/chp3_oscillation/NOC_3_02_forces_angular_motion" data-displaycode="true">See the code</a> for this example below.
 </div>
 
 <div data-start="13:15" data-end="13:25">
