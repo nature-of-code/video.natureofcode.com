@@ -168,7 +168,24 @@ function displayCodeData(data) {
 		//console.log("Tab clean-up");
 		$("#codetabs").html("");
 
+		// Sort tab
+
+		var tabFiles = [];
 		$(data).each( function(index, value) {
+			var pathArray = value.path.split('/');
+			var parent = pathArray[pathArray.length-2];
+			var file = pathArray[pathArray.length-1].split(".")[0];
+			
+			if(parent == file) {
+				tabFiles.unshift(value);
+			} else {
+				tabFiles.push(value);
+			}
+		});
+
+		// Display Tabs
+
+		$(tabFiles).each( function(index, value) {
 			var tabLink = $("<a/>")
 				.html(value["name"])
 				.attr("href", value["html_url"])
